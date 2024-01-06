@@ -36,6 +36,7 @@ body {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    align-items: center;
 }
 .row{
     flex-direction: row;
