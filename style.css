@@ -31,24 +31,21 @@ body {
     height: calc(100vh - 50px); /* Adjust for navbar height */
 }
 
-.column {
+#column {
     flex-direction: row;
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
+    position: relative;
+    width: 100%;
 }
-.row{
-    flex-direction: row;
+ 
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-#leftColumn {
-    background-color: #f2f2f2;
-}
-
-#rightColumn {
-    background-color: #e0e0e0;
-}
-
 :root {
     --dark-body: #4d4c5a;
     --dark-main: #141529;
@@ -71,7 +68,7 @@ body {
 }
 
 .dark {
-    --bg-body: var(--dark-body);
+    
     --bg-main: var(--dark-main);
     --bg-second: var(--dark-second);
     --color-hover: var(--dark-hover);
@@ -79,7 +76,7 @@ body {
 }
 
 .light {
-    --bg-body: var(--light-body);
+    
     --bg-main: var(--light-main);
     --bg-second: var(--light-second);
     --color-hover: var(--light-hover);
@@ -95,7 +92,7 @@ body {
     height: 100vh;
     place-items: center;
     font-family: var(--font-family);
-    background-color: var(--bg-body);
+    
 }
 
 .calendar {
@@ -104,8 +101,10 @@ body {
     background-color: var(--bg-main);
     border-radius: 30px;
     padding: 20px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    right: 5%;
+    margin-top: 2%;
 }
 
 .light .calendar {
