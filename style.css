@@ -352,12 +352,8 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
-    .split-container {
-        flex-direction: column; /* Change to a column layout for small screens */
-    }
-
     .navbar {
-        flex-direction: column; /* Stack navbar items in a column for small screens */
+        flex-direction: row; /* Stack navbar items in a column for small screens */
     }
 
     .navbar a {
